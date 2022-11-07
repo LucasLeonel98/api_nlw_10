@@ -31,7 +31,7 @@ async function bootstrap() {
     await fastify.register(userRoutes)
     await fastify.register(authRoutes)
 
-    await fastify.listen({ port: process.env.PORT || 3333, host: '164.163.237.35' })
+    await fastify.listen({ port: process.env.PORT || 3333, host: '0.0.0.0' })
 
 }
 
